@@ -10,20 +10,20 @@ body{
     font-family: 'Slabo 27px', serif;
 }
  
-.nav-item{
+.navigate .nav-item{
     padding: 20px;
     font-size: 18px;
     font-weight: 300;
     border-left: .1px solid grey;
 }
-.nav-item a{
+.navigate .nav-item a{
       color: white;
 }
 .nav-item:hover{
     background: rgba(56, 143, 246,0.8);
     
 }
-.nav-item a:hover{
+.navigate .nav-item a:hover{
      color: white;
 }
 .navigate{
@@ -127,7 +127,9 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-
+.edu1{
+    display: none;
+}
 .edu{
     position: relative;
     padding: 50px;
@@ -153,6 +155,9 @@ body{
     transform: translate(-50%,-50%);
     width: 85%;
 }
+.tablet{
+    display: none;
+}
 .certification .box{
     position: absolute;
     top: 25%;
@@ -160,18 +165,9 @@ body{
     transform: translate(-50%,50%);
     width: 50%;
 }
-.certification .box .color{
-    position: absolute;
-    transform: translate(-5.5%,-10%);
-    height: 550px;
-    width: 890px;
-    background: white;
-    z-index: 0;
-}
 .certification .inside{
     position: absolute;
     width: 100%;
- 
 }
 .box .inside .nav-item{
     font-size: 14px;
@@ -209,6 +205,7 @@ body{
     margin: 0;
 }
 .interskills{
+    position: relative;
     background: rgb(56, 143, 246);
     height: 300px;
     overflow: hidden;
@@ -231,6 +228,9 @@ body{
     font-family: 'Anton', sans-serif;
      font-size: 3em;
    
+}
+.interskills .row2{
+    display: none;
 }
 
 .projects{
@@ -325,3 +325,123 @@ body{
     z-index: -2;
 }
 
+
+@media (max-width:1020px){
+    .header video{
+        display: none;
+    }
+    .header{
+        background: url(../image/bgimg.jpeg);
+        height: 100vh;
+    }
+    .header .box h1 span{
+        font-size: 110px;
+        opacity: 0.5;
+    }
+    .header .box h5{
+        font-size: 45px;
+    }
+     .header .box span{
+        font-size: 50px;
+    }
+    .navigate .nav-item{
+    padding: 25px;
+    font-size: 26px;
+    }
+    .navigate{
+        height: 104px;
+    }
+    .quoets p{
+        font-size: 40px;
+    }
+    .edu{
+        display: none;
+    }
+    .edu1{
+        display: block;
+    }
+    
+    .edu1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    font-weight: 300;
+    height: 1860px;
+    }
+    .edu1 .card{
+    background: rgb(56, 143, 246);
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+    }
+    .edu1 .card-text a{
+    color: blue;
+    }
+    .img-comp{
+        display: none;
+    }
+    .certification{
+        height: 1200px;
+    }
+    .tablet{
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    width: 95%;
+    }
+    .certification .box{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 50%;
+    }
+    .certification .inside{
+    position: absolute; 
+    width: 100%;
+    }
+    .box .inside .nav-item{
+    font-size: 28px;
+    }
+    .certification .h{
+        font-size: 70px;
+    }
+    .skills .bgimage{
+        display: none;
+    }
+    .skills .card{
+        left: 45%;
+        transform: translateX(-10%);
+        width: 150%;
+        font-size: 26px;
+    }
+    .skills .card-title{
+        font-size: 30px;
+    }
+    .interskills .row{
+        display: none;
+    }
+    .interskills .row2{
+        transform: translateX(15%);
+        display: block;
+    }
+    .interskills .card{
+        border: 3px dashed white;
+        font-size: 20px;
+    }
+    .interskills{
+        height: 650px;
+    }
+    .footer .lead{
+        font-size: 30px;
+    }
+    .footer{
+        font-size: 46px;
+    }
+    .footer .jumbotron p{
+        font-size: 36px;
+    }
+}
