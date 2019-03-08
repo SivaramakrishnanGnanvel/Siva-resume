@@ -1,0 +1,327 @@
+html{
+    margin: 0;
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Slabo 27px', serif;
+}
+ 
+.nav-item{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    border-left: .1px solid grey;
+}
+.nav-item a{
+      color: white;
+}
+.nav-item:hover{
+    background: rgba(56, 143, 246,0.8);
+    
+}
+.nav-item a:hover{
+     color: white;
+}
+.navigate{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 83px;
+    z-index: 2;
+    background: rgba(0,0,0,0.4);
+    border-bottom: .1px solid grey;
+}
+
+.header{
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+   
+}
+.header video{
+     width: 100%;
+}
+
+.header .box{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 85%;
+    z-index: 2;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+.box h5{
+    font-size: 30px;
+    font-weight: 100;
+        
+}
+.box h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+    font-size: 65px;
+    font-weight: 100;
+}
+
+.box h1 span:nth-child(1){animation-delay: 0s;}
+.box h1 span:nth-child(2){animation-delay: 0.25s;}
+.box h1 span:nth-child(3){animation-delay: 0.5s;}
+.box h1 span:nth-child(4){animation-delay: 0.75s;}
+.box h1 span:nth-child(5){animation-delay: 1s;}
+.box h1 span:nth-child(6){animation-delay: 1.25s;}
+.box h1 span:nth-child(7){animation-delay: 1.5s;}
+.box h1 span:nth-child(8){animation-delay: 1.75s;}
+.box h1 span:nth-child(9){animation-delay: 2s;}
+.box h1 span:nth-child(10){animation-delay: 2.25s;}
+.box h1 span:nth-child(11){animation-delay: 2.5s;}
+.box h1 span:nth-child(12){animation-delay: 2.75s;}
+.box h1 span:nth-child(13){animation-delay: 3s;}
+.box h1 span:nth-child(14){animation-delay: 3.25s;}
+.box h1 span:nth-child(15){animation-delay: 3.5s;}
+.box h1 span:nth-child(16){animation-delay: 3.75s;}
+.box h1 span:nth-child(17){animation-delay: 4s;}
+.box h1 span:nth-child(18){animation-delay: 4.25s;}
+.box h1 span:nth-child(19){animation-delay: 4.5s;}
+.box h1 span:nth-child(20){animation-delay: 4.75s;}
+.box h1 span:nth-child(21){animation-delay: 5s;}
+.box h1 span:nth-child(22){animation-delay: 5.25s;}
+.box h1 span:nth-child(23){animation-delay: 5.5s;}
+
+@keyframes animate
+{
+    
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 300px #00b3ff,
+            0 0 400px #00b3ff; 
+    }
+    5%,95%{
+        color: white;
+        filter: blur(0px);
+        text-shadow:none;
+    }
+}
+
+.quoets{
+    height: 200px;
+    color: rgb(56, 143, 246);
+}
+.quoets blockquote{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.edu{
+    position: relative;
+    padding: 50px;
+    font-weight: 300;
+    height: 550px;
+}
+.edu .card{
+   background: rgb(56, 143, 246);
+    color: white;
+}
+.edu .card-text a{
+    color: blue;
+}
+.certification{
+    position: relative;
+    height: 880px;
+    overflow: hidden;
+}
+.img-comp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+}
+.certification .box{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 50%;
+}
+.certification .box .color{
+    position: absolute;
+    transform: translate(-5.5%,-10%);
+    height: 550px;
+    width: 890px;
+    background: white;
+    z-index: 0;
+}
+.certification .inside{
+    position: absolute;
+    width: 100%;
+ 
+}
+.box .inside .nav-item{
+    font-size: 14px;
+}
+.col-6 .card{
+    position: absolute;
+    width: 90%;
+    transform: translateY(20%);
+    left: 8%;
+    color: grey;
+    font-weight: 300;
+    background: transparent;
+}
+.skills{
+    position: relative;
+    height: 660px;
+    overflow: hidden;
+}
+.skills{
+    background: url(../image/png/bg_grey.png);
+    background-size: cover;
+    background-position: center;
+}
+.skills h1{
+    color:rgb(56, 143, 246);
+}
+.bgimage img{
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1250px;
+}
+.skills .card .card-text{
+    margin: 0;
+}
+.interskills{
+    background: rgb(56, 143, 246);
+    height: 300px;
+    overflow: hidden;
+}
+.interskills .card{
+    transform: translateY(50%);
+    background: transparent;
+    color: white;
+    text-align: center;
+    border: none;
+    
+}
+.interskills .card h1{
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    
+}
+.interskills .card h2{
+    
+    font-family: 'Anton', sans-serif;
+     font-size: 3em;
+   
+}
+
+.projects{
+    position: relative;
+    height: 1020px;
+    overflow: hidden;
+}
+.projects .c1{
+    position: relative;
+    transform: translateY(0%);
+    left: 5%;
+    width: 500px;
+    font-weight: 300;
+}
+.projects .c2{
+    position: absolute;
+    transform: translateY(0%);
+    right: 5%;
+    width: 500px;
+    font-weight: 300;
+}
+.card-img-overlay{
+    position: absolute;
+    transform: translate(0%,50%);
+    height: 220px;
+    color: black;
+    background: rgba(256,256,256,0.4);
+}
+.card-img-overlay button{
+    padding: 5px 22px;
+    font-size: 20px
+}
+.line_1{
+    position: absolute;
+    top: 15%;
+    padding: 45px;
+    right: 4%;
+    transform: translateY(-25%);
+    width: 45%;
+}
+.line_2{
+    position: absolute;
+    bottom: 25%;
+    padding: 45px;
+    left: 4%;
+    transform: translateY(-25%);
+    width: 45%;
+}
+
+.footer .jumbotron{
+    background: rgb(56, 143, 246);
+    width: 100%;
+    color: white;
+    position: relative;
+    
+}
+.footer .jumbotron button{
+    background: white;
+    color: rgb(56, 143, 246);
+    font-size: 20px;
+}
+.modal{
+    text-align: center;
+    background: rgba(56, 143, 246,0.2);
+}
+.modal-body{
+     background: rgba(56, 143, 246);
+    color: white;
+}
+.modal-body i{
+    color: white;
+    font-size: 20px;
+}
+.modal h1{
+    color: #333;
+}
+.modal-footer button{
+    background: white;
+    font-size: 20px;
+    color: rgba(56, 143, 246);
+    padding: 10px 30px;
+}
+.png{
+    background: url(../image/png/orbit_1.png);
+    background-position: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -2;
+}
+
