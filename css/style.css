@@ -373,6 +373,7 @@ body{
     .header{
         background: url(../image/bgimg.jpeg);
         background-repeat: no-repeat;
+        background-size:cover;
         height: 100vh;
     }
     .header .box h1 span{
